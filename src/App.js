@@ -141,7 +141,7 @@ function App(props) {
               checkBoxValue={checkBoxValue}
             />
             {/* strength */}
-            <div className="py-4 px-6 mb-6 bg-app-gray-900 rounded-sm w-full">
+            <div className="py-4 px-6  bg-app-gray-900 rounded-sm w-full">
               <div className="flex items-center justify-between">
                 <p className="uppercase font-mono text-app-gray-500 text-md font-bold">
                   Strength
@@ -191,9 +191,9 @@ function App(props) {
               </div>
             </div>
             {/* generate */}
-            <button className="py-4 px-6 w-full rounded-sm  font-mono text-sm uppercase font-[800]  text-app-gray-800 transform duration-300   bg-app-green border-2 border-app-green hover:bg-app-gray-800 hover:text-app-green hover:border-app-green ">
-              Generate =>
-            </button>
+//             <button className="py-4 px-6 w-full rounded-sm  font-mono text-sm uppercase font-[800]  text-app-gray-800 transform duration-300   bg-app-green border-2 border-app-green hover:bg-app-gray-800 hover:text-app-green hover:border-app-green ">
+//               Generate =>
+//             </button>
           </div>
         </div>
       </div>
