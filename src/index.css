@@ -1,13 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background: #121117;
+  position: relative;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.spacer {
+  aspect-ratio: 900/400;
+  width: 100%;
+}
+
+.layer1 {
+  background-image: url("../UI-stuff/layered-steps-haikei-desktop3.svg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  position: absolute;
+}
+
+@media (max-width: 490px) {
+  .layer1 {
+    background-image: url("../UI-stuff/layered-steps-haikei-mobile4.svg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    position: absolute;
+  }
+  .spacer {
+    aspect-ratio: 675/900;
+    width: 100%;
+  }
+}
+
+/* .gradient-text {
+  font-size: 28px;
+  background: -webkit-linear-gradient(hsl(127, 100%, 82%), black);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+} */
+
+input:checked + div {
+  @apply border-app-green bg-app-green;
+}
+input:checked + div svg {
+  @apply block cursor-pointer;
+}
+input {
+  @apply cursor-pointer;
+}
+
+.unchecked {
+  @apply bg-app-gray-800 border-app-gray-500 flex items-center justify-center w-6 h-6 border-2;
+}
+
+.checked {
+  @apply flex items-center justify-center text-center font-mono  font-semibold w-6 h-6 border-2   border-app-green bg-app-green;
 }
