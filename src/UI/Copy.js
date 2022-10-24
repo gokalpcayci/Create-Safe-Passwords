@@ -10,7 +10,7 @@ function Copy(props) {
 
   // <button class="btn" onclick="copyContent()">Copy!</button>
 
-  let text = document.getElementById("text").innerHTML;
+  let text = document.getElementById("text")?.innerHTML;
   const copyContent = async () => {
     try {
       await navigator.clipboard.writeText(text);
